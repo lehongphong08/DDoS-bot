@@ -13,7 +13,7 @@ def start (message):
 # Команда /help
 @bot.message_handler(commands=['help'])
 def help (message):
-    bot.send_message(message.chat.id, "Список команд:\n /ddos - start a ddos attack \n /help - all command \n /author - author of bot")
+    bot.send_message(message.chat.id, "welcome to Akyra ddos bot:\n /ddos - start a ddos attack \n /help - all command \n /author - author of bot")
 # Команда /ddos
 @bot.message_handler(commands=['ddos'])
 def ddosa (message):
@@ -28,6 +28,6 @@ def ddoss (message):
 # Команда /author
 @bot.message_handler(commands=['author'])
 def author (message):
-  bot.send_message(message.chat.id, "Написал код данного бота: 0xSn1kky =)")
+  bot.send_message(message.chat.id, "@vilgax and 0xSn1kky =)")
   
 bot.polling(none_stop=True, interval=0)
